@@ -36,7 +36,7 @@ app.get("/api", (req, res) => {
     const response = {
       slack_name: "Biggie.ts",
       current_day: days[date.getDay()],
-      utc_time: date.toISOString(),
+      utc_time: date.toUTCString(),
       track: "backend",
       github_file_url:
         "https://github.com/Masud-Ndatsu/HNGx/blob/master/task1/index.js",
